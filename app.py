@@ -22,7 +22,7 @@ elif page == "Visualisasi" :
     st.header('Halaman Visualisasi')
 
     if 'data' in locals():
-        st.set_option('deprecation.showPyplotGlobalUse', False)
+        # st.set_option('deprecation.showPyplotGlobalUse', False)
 
         selected_university = st.selectbox('Pilih Universitas', data['universitas'].unique())
         filtered_data = data[data['universitas'] == selected_university]
